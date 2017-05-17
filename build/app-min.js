@@ -1,0 +1,1 @@
+var contactForm=$("#contactForm");contactForm.submit(function(o){var t={email:"vshvdbj@jshvh",name:"sygydgvd",phone:"6237423874"};$.ajax({url:"https://httpbin.org/post",method:"POST",data:t}).done(function(o){console.log("Done ",o)}).fail(function(o){console.log("Error ",o)}),o.preventDefault()});

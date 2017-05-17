@@ -1,0 +1,29 @@
+{
+  "name": "valtech_test_project",
+  "version": "1.0.0",
+  "description": "this project created for valtech test task",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "valtech",
+    "test"
+  ],
+  "author": "astrelnikov7@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-copy": "^1.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-minify": "^1.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp-sourcemaps": "^2.6.0",
+    "jquery": "^3.2.1"
+  }
+}

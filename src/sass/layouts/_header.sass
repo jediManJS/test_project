@@ -1,0 +1,141 @@
+header
+  position: fixed
+  background: #ffffff
+  height: 197px
+  width: 100%
+  top: 0
+  left: 0
+  text-transform: uppercase
+
+  div.wrapper.holder
+    text-align: center
+
+    .header-left
+      float: left
+      width: calc(50% - 80px)
+      text-align: left
+
+      .social
+        +flex(row nowrap, flex-start, center)
+        padding-top: 55px
+
+        span
+          color: #757575
+
+        a
+          margin-left: 2.4rem
+
+    .info-holder
+      +flex(row nowrap, space-between, center)
+      padding: 3.6rem 3rem 0 0
+
+    a.info-item
+      color: #757575
+      line-height: 1.5rem
+      &:hover
+        text-decoration: none
+        color: $primary-color
+        span
+          text-decoration: underline
+
+      span
+        font-weight: bold
+        display: block
+
+    .header-right
+      float: right
+      width: calc(50% - 80px)
+      text-align: left
+
+      .header-actions
+        +flex(row nowrap, flex-end, center)
+        padding-top: 55px
+        min-height: 85px
+
+        a.action-link
+          color: $primary-color
+          margin-left: 3rem
+          &:hover
+            text-decoration: none
+
+          svg
+            vertical-align: bottom
+            margin-left: 0.6rem
+
+        ul
+          li.active
+            position: relative
+            border-bottom: 2px solid $primary-color
+            font-weight: bold
+            &:hover
+              ul.drop-lang
+                height: auto
+                max-height: 300px
+                background-color: $primary-color
+
+            a
+              color: $primary-color
+              &:hover
+                text-decoration: none
+
+              svg
+                vertical-align: middle
+
+            ul.drop-lang
+              height: 0
+              max-height: 0
+              overflow: hidden
+              position: absolute
+              width: 100%
+              left: 0
+              top: 100%
+              background-color: transparent
+              transition: background-color 2s, max-height 1s ease-out
+
+              li
+                text-align: center
+                padding: 0.6rem 0
+
+                a
+                  color: #FFFFFF
+
+      .info-holder
+        padding: 3.6rem 0 0 3rem
+
+        a.button-free
+          background: $primary-color
+          color: #FFFFFF
+          font-weight: bold
+          line-height: 18px
+          padding: 6px 20px
+          border-radius: 15px
+          svg
+            vertical-align: baseline
+            margin-left: 6px
+          &:hover
+            text-decoration: none
+
+        a.button-account
+          background: #FFFFFF
+          color: $primary-color
+          font-weight: bold
+          line-height: 18px
+          border: 2px solid $primary-color
+          border-radius: 15px
+          padding: 4px 20px
+          svg
+            vertical-align: middle
+            margin-left: 12px
+          &:hover
+            text-decoration: none
+
+        a.search
+          line-height: 0
+
+    .logo-holder
+      margin: 0 auto
+      max-width: 135px
+      padding-top: 2rem
+
+      a
+        display: block
