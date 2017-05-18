@@ -14,11 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
     "gulp-copy": "^1.0.0",
     "gulp-csso": "^3.0.0",
-    "gulp-minify": "^1.0.0",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {

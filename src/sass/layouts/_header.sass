@@ -6,6 +6,8 @@ header
   top: 0
   left: 0
   text-transform: uppercase
+  z-index: 9
+  transition: height 1s ease-in
 
   div.wrapper.holder
     text-align: center
@@ -17,7 +19,7 @@ header
 
       .social
         +flex(row nowrap, flex-start, center)
-        padding-top: 55px
+        +firstHeaderRow()
 
         span
           color: #757575
@@ -42,15 +44,44 @@ header
         font-weight: bold
         display: block
 
+
+    .left-mobile
+      width: 100%
+      padding-top: 4rem
+
+      .mobile-actions
+        +flex(row nowrap, space-around, center)
+
+        .search
+          svg
+            width: 48px
+            height: 48px
+
+    .mobile-menu
+      button.dropdown-toggle
+        background-color: transparent
+        border: none
+        padding: 0
+
+      .dropdown-menu
+        border: none
+        border-radius: 0
+        background: $primary-color
+        li
+          a
+            color: #FFFFFF
+            font-weight: bold
+            font-size: 1.6rem
+            &:hover
+              background-color: #245580
+
     .header-right
+      @extend .header-left
       float: right
-      width: calc(50% - 80px)
-      text-align: left
 
       .header-actions
         +flex(row nowrap, flex-end, center)
-        padding-top: 55px
-        min-height: 85px
+        +firstHeaderRow()
 
         a.action-link
           color: $primary-color
@@ -139,3 +170,68 @@ header
 
       a
         display: block
+
+body.sticky-header
+  padding-top: 135px
+  header
+    height: 135px
+    border-bottom: 1px solid #f1f1f1
+
+    div.wrapper.holder
+      .logo-holder
+        padding-top: 0
+
+      .header-actions
+          height: 0
+          opacity: 0
+          padding-top: 0
+          overflow: hidden
+
+      .social
+        @extend .header-actions
+
+      .info-holder
+        padding-top: 6.6rem !important
+
+@media #{screen} and (max-width: 990px)
+  body, body.sticky-header
+    padding-top: 135px
+    header
+      height: 135px
+      border-bottom: 1px solid #f1f1f1
+      div.wrapper.holder
+        .logo-holder
+          padding-top: 0
+
+        .info-holder
+          padding-top: 0 !important
+
+        .header-right
+          .info-holder
+            flex-direction: column
+            justify-content: space-around
+            height: 135px
+
+            a.button-free, a.button-account
+              min-width: 150px
+              padding-left: 12px
+              padding-right: 12px
+              font-size: 1.2rem
+
+
+@media #{screen} and (max-width: 505px)
+  body
+    header
+      padding: 0 6px
+
+      .header-right
+        .info-holder
+          flex-direction: column
+          justify-content: space-around
+          height: 135px
+
+          a.button-free, a.button-account
+            min-width: 150px
+            padding-left: 12px
+            padding-right: 12px
+            font-size: 1.2rem

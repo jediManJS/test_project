@@ -7,12 +7,13 @@
     <link href="lib/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="lib/jquery.min.js" type="application/javascript"></script>
+    <script src="lib/bootstrap.min.js" type="application/javascript"></script>
 </head>
 <body>
     <header>
         <div class="wrapper holder">
             <div class="header-left">
-                <div class="social">
+                <div class="social  hidden-sm hidden-xs">
                     <span>Follow us on:</span>
                     <a href="#" class="soc-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="facebook" x="0px" y="0px" width="21px" height="21px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><path d="M296.296,512H200.36V256h-64v-88.225l64-0.029l-0.104-51.976C200.256,43.794,219.773,0,304.556,0h70.588v88.242h-44.115   c-33.016,0-34.604,12.328-34.604,35.342l-0.131,44.162h79.346l-9.354,88.225L296.36,256L296.296,512z" fill="#046dc2"/></g></svg>
@@ -25,14 +26,31 @@
                     </a>
                 </div>
                 <div class="info-holder">
-                    <a href="#" class="info-item">Our<span>products</span></a>
-                    <a href="#" class="info-item">Our<span>ingredients</span></a>
-                    <a href="#" class="info-item">Our<span>commitments</span></a>
-                    <a href="#" class="info-item">Our<span>heritage</span></a>
+                    <a href="#" class="info-item visible-lg-block visible-md-block">Our<span>products</span></a>
+                    <a href="#" class="info-item visible-lg-block visible-md-block">Our<span>ingredients</span></a>
+                    <a href="#" class="info-item visible-lg-block visible-md-block">Our<span>commitments</span></a>
+                    <a href="#" class="info-item visible-lg-block visible-md-block">Our<span>heritage</span></a>
+                    <div class="left-mobile visible-sm-block visible-xs-block">
+                        <div class="mobile-actions">
+                            <div class="dropdown mobile-menu">
+                                <button data-toggle="dropdown" class="dropdown-toggle"><img src="images/menu.svg" alt="Menu" width="48px" height="48px"></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="mobile-info-item">Our products</a></li>
+                                    <li><a href="#" class="mobile-info-item">Our ingredients</a></li>
+                                    <li><a href="#" class="mobile-info-item">Our commitments</a></li>
+                                    <li><a href="#" class="mobile-info-item">Our heritage</a></li>
+                                    <li><a href="#" class="mobile-info-item">Store finder</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="search">
+                                <svg><use x="0" y="0" width="48px" height="48px" xlink:href="#search" /></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="header-right">
-                <div class="header-actions">
+                <div class="header-actions hidden-sm hidden-xs">
                     <ul class="lang">
                         <li class="active">
                             <a href="#">Fr <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="arrow_down" x="0px" y="0px" viewBox="0 0 407.437 407.437" style="enable-background:new 0 0 407.437 407.437;" xml:space="preserve" width="10px" height="10px"><polygon points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 " fill="#046dc2"/></svg></a>
@@ -55,14 +73,14 @@
                     </a>
                 </div>
                 <div class="info-holder">
-                    <a href="#" class="info-item">Store<span>finder</span></a>
+                    <a href="#" class="info-item visible-lg-block visible-md-block">Store<span>finder</span></a>
                     <a href="#" class="button-free">Get free sample
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="arrow_right" x="0px" y="0px" viewBox="0 0 404.258 404.258" style="enable-background:new 0 0 404.258 404.258;" xml:space="preserve" width="10px" height="10px"><polygon points="138.331,0 114.331,18 252.427,202.129 114.331,386.258 138.331,404.258 289.927,202.129 " fill="#FFFFFF"/></svg>
                     </a>
                     <a href="#" class="button-account">My mixa mag
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="book" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve"><g><path d="M248.194,514.052c34.995,0,47.18,56.221,47.18,56.221H306h10.627c0,0,12.184-56.221,47.18-56.221   c34.995,0,223.713,0,223.713,0c13.521,0,24.48-11.016,24.48-24.591V97.364c0-55.636-55.637-55.636-55.637-55.636H341.969   C323.998,41.728,306,64.455,306,75.944v0.083c0-11.517-17.609-34.3-35.246-34.3H55.636c0,0-55.636,0-55.636,55.636v392.097   c0,13.575,10.96,24.592,24.48,24.592C24.48,514.052,213.199,514.052,248.194,514.052z M333.429,112.636   c0-9.097,7.428-16.496,16.469-16.496l194.504,1.224c6.093,0,13.27,2.865,13.298,8.93v342.024c0.027,6.064-7.178,13.02-13.158,13.02   c0,0-153.918-1.225-174.81-1.225s-36.303,25.51-36.303,25.51V112.636z M55.247,106.293c0-6.064,7.205-8.93,13.297-8.93   l194.505-1.224c9.041,0,16.468,7.372,16.468,16.496v372.958c0,0-15.411-25.509-36.303-25.509s-174.81,1.224-174.81,1.224   c-5.981,0-13.158-6.954-13.158-13.019V106.293z" fill="#046dc2"/></g></svg>
                     </a>
-                    <a href="#" class="search">
+                    <a href="#" class="search visible-lg-block visible-md-block">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="search" x="0px" y="0px" viewBox="0 0 438 438" style="enable-background:new 0 0 438 438;" xml:space="preserve" width="28px" height="28px"><g><g><g><path d="M279.25,0c-86,0-156,70-156,156c0,36,11,69,31,95l-145,145c-10,10-10,25,0,35c5,5,11,7,17,7     s13-2,18-7l146-146c25,18,56,28,89,28c86,0,157-71,157-157S365.25,0,279.25,0z M279.25,269c-62,0-113-51-113-113s51-113,113-113     s113,51,113,113S341.25,269,279.25,269z" fill="#046dc2"/><path d="M311.25,78c-11-5-23,0-28,11s0,24,11,29c1,1,27,13,24,35c-2,13,8,25,22,25c11,0,20-8,21-19     C367.25,115,332.25,87,311.25,78z" fill="#046dc2"/><path d="M306.25,188c-12,0-22,10-22,22s10,21,22,21s22-9,22-21S318.25,188,306.25,188z" fill="#046dc2"/></g></g></g></svg>
                     </a>
                 </div>
@@ -83,22 +101,126 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper">
+            <div class="wrapper v-padding">
                 <div class="content-wrapper">
                     <section>
                         <h1>Contact Us</h1>
                         <p>Our consulting team is available to answer all your questions.</p>
                         <p>To better serve you, please fill the form below, we will respond promptly. Our consulting team is available to answer all your questions. Our consulting team is available to answer all your questions. Our consulting team is available to answer all your questions. Our consulting team is available to answer all your questions. Our consulting team is available to answer all your questions.</p>
                     </section>
-
-                    <form enctype="text/plain" id="contactForm" name="form">
+                    <form enctype="text/plain" id="contactForm" class="theme-form" name="form">
                         <div class="container-fluid">
+                            <div class="row no-padding">
+                                <div class="col-md-6 right-indent">
+                                    <h3>Subject of your request</h3>
+                                    <div class="container-fluid fields-rows">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="theme">Choose your theme</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <select id="theme" required>
+                                                    <option value="Standard theme">Standard theme</option>
+                                                    <option value="Custom Theme">Custom Theme</option>
+                                                    <option value="Mega Custom Theme">Mega Custom Theme</option>
+                                                    <option value="Unbelievable Theme">Unbelievable Theme</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="product">Product Concerned</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <select id="product" required>
+                                                    <option value="Standard product">Standard product</option>
+                                                    <option value="Custom product">Custom product</option>
+                                                    <option value="Mega Custom product">Mega Custom product</option>
+                                                    <option value="Unbelievable product">Unbelievable product</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="product-num">Product Lot N&deg;</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" pattern="[0-9]{7}" id="product-num" name="product-num" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-sm-12"><label for="message">Your Message</label></div>
+                                            <div class="col-lg-12 col-sm-12">
+                                                <textarea id="message" name="message" maxlength="2001" class="message-text" required></textarea>
+                                                <div class="char-left"><span class="count-chars">0</span> / 2000</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 left-indent">
+                                    <h3>You</h3>
+                                    <div class="container-fluid fields-rows">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="title">Title</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <select id="title" required>
+                                                    <option value="Standard title">Standard title</option>
+                                                    <option value="Custom title">Custom title</option>
+                                                    <option value="Mega Custom title">Mega Custom title</option>
+                                                    <option value="Unbelievable title">Unbelievable title</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="first-name">First Name</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" id="first-name" name="first-name" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="last-name">Last Name</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" id="last-name" name="last-name" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="birth">Birthdate</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="date" id="birth" name="birth" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="phone">Phone number</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="tel" pattern="38[0-9]{3}-[0-9]{7}" id="phone" name="phone" required>
+                                            </div>
+                                        </div>
+                                        <div class="row separator-row">
+                                            <div class="col-lg-3 col-sm-12"><label for="email">e-mail</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="email" id="email" name="email" required>
+                                            </div>
+                                        </div>
+                                        <h3 class="row">Your address</h3>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="street">street</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" id="street" name="street" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="city">city</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" id="city" name="city" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-12"><label for="Postcode">Postcode</label></div>
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" id="Postcode" name="Postcode" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
-
-                                    <label for="email">email</label><input type="email" id="email" name="email">
-                                    <label for="data">data</label><input type="text" id="data" name="data">
-                                    <input type="submit" value="Ok" name="submit">
-
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" form="contactForm" class="button-send">Send<svg><use x="0" y="0" xlink:href="#arrow_right" /></svg></button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -106,6 +228,6 @@
             </div>
         </div>
     </main>
-    <script src="app-min.js" type="application/javascript"></script>
+    <script src="app.js" type="application/javascript"></script>
 </body>
 </html>

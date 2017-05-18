@@ -1,13 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-csso');
-var minifyJS = require('gulp-minify');
+var minifyJS = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
 var input = {
     styles: 'src/sass/**/*.sass',
     js: 'src/js/**/*.js',
-    libs: ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/css/bootstrap.min.css']
+    libs: ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/bootstrap/dist/css/bootstrap.min.css']
 };
 var output = {
     styles: 'build/css',
