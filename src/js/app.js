@@ -24,22 +24,28 @@ $(document).ready(function() {
     contactForm.submit(function (event) {
 
         var getFields = $(this).find("input, select, textarea");
-        console.log(getFields);
 
-        var collectData = {
-            email: 'vshvdbj@jshvh',
-            name: 'sygydgvd',
-            phone: '6237423874'
-        };
+        var jsonObj = {};
+
+        $(getFields).each(function() {
+
+            var id = $(this).attr("id");
+            var fieldValue = $(this).val();
+
+            jsonObj[id] = fieldValue;
+        });
+        var jsonData = JSON.stringify(jsonObj);
 
         $.ajax({
             url: 'https://httpbin.org/post',
             method: 'POST',
-            data: collectData
+            data: jsonData
         }).done(function (response) {
-            console.log("Done ", response);
+            console.log("Done: ", response);
+            contactForm.trigger("reset");
+            alert("Contact Form submitted!!! Thank you.");
         }).fail(function (error) {
-            console.log("Error ", error)
+            console.log("Error: ", error)
         });
 
         event.preventDefault();
