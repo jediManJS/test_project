@@ -1,0 +1,14 @@
+For this task used GULP as build system
+All project files are in the "build" folder
+Dev files in the "src" folder
+NOTICE:
+- not realized CUSTOM highlighting errors on validation (used regular browser styles and alerts)
+- not realized custom tooltips(messages) on validation errors(sorry)
+	for example "PHONE NUMBER" field have format: 38***-******* (to pass validation you have write in this field something like this: 38067-1112233)
+	and "PRODUCT LOT NUMBER" have numeric validation and have to be 7 digits!
+
+For this task spent about 10,5hours
+Also wanted to add footer element on tablet and mobile view and place there social icons from header and languages selector with "newsletter" and "profile" links, but didn't have enought time for it. :(
+
+Thanks and kind regards,
+Alexey Strelnikov
